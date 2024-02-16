@@ -34,7 +34,7 @@ Este manual está diseñado para ayudarte a comprender el flujo de la integraci�
 * Ingrese a la carpeta raíz del proyecto desde el terminal.
 
 * A continuación, instale Express y Morgan para poder ejecutar y ver las consultas en el servidor.
-```sh
+```bash
 npm i express morgan
  ```
 <p align="center">
