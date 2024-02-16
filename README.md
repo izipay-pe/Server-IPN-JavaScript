@@ -4,7 +4,7 @@
 * [2. Requisitos previos](#2-requisitos-previos)
 * [3. Despliegue](#3-despliegue)
 * [4. Subirlo al servidor web](#4-subirlo-al-servidor-web)
-* [5. Configurar la URL de notificación al final del pago](#5-configurar-la-url-de-notificacion-al-final-del-pago)
+* [5. Configurar la URL de notificacion al final del pago](#5-configurar-la-url-de-notificacion-al-final-del-pago)
 ## 1. Introducción
 En este manual podrás encontrar una guía paso a paso para configurar un proyecto de **[JavaScript]** con la respuesta de la IPN. Te proporcionaremos instrucciones detalladas y credenciales de prueba para la instalación y configuración del proyecto, permitiéndote trabajar y experimentar de manera segura en tu propio entorno local.
 Este manual está diseñado para ayudarte a comprender el flujo de la integración de la pasarela para ayudarte a aprovechar al máximo tu proyecto y facilitar tu experiencia de desarrollo.
