@@ -56,6 +56,10 @@ Para este ejemplo se utilizó reenvío de puertos en Visual Studio Code, siga lo
   * paso 4: Cambiar la visibilidad a Públic, para permitir conexiones sin inicio de sesión. 
   * paso 5: Añadir en el BackOffice Vendor el endpoint o ruta del ipn en la sección API REST.
 
+    <p align="center">
+  <img src="https://i.postimg.cc/Kz8YJ4JP/PORTS.png" alt="Formulario" width="350"/>
+</p>
+
 ## 5.- Configurar la URL de notificación al final del pago
 
   * Ingresar a su back office vendedor [aquí](https://secure.micuentaweb.pe/vads-merchant/) e ingresar a la siguiente ruta: `Configuración -> Reglas de notificaciones -> Url de notificación al final del pago`, una ves ingrese su endpoint, Guarda y acepta el mensaje de confirmación.
