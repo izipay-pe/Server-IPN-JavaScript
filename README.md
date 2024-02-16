@@ -64,6 +64,6 @@ Para este ejemplo se utilizó reenvío de puertos en Visual Studio Code, siga lo
 
   * Ingresar a su back office vendedor [aquí](https://secure.micuentaweb.pe/vads-merchant/) e ingresar a la siguiente ruta: `Configuración -> Reglas de notificaciones -> Url de notificación al final del pago`, una ves ingrese su endpoint, Guarda y acepta el mensaje de confirmación.
 
-      ![Regla de Notificación](/src/imagenes-readme/rconfigurar-endpoint.png)
+      ![Regla de Notificación](https://i.postimg.cc/NFRBtP7x/finaldelpago.png)
   
 
