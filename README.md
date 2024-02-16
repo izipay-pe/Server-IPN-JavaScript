@@ -50,37 +50,11 @@ npm run start
 
 Para este ejemplo se utilizó reenvío de puertos en Visual Studio Code, siga los siguientes pasos.
 
-  * paso 1: creamos nuestro app, donde se subirá el proyecto.
-          ![crear app](/src/imagenes-readme/crear-app.png)
-
-  * paso 2: ingresamos un nombre para nuestro aplicativo y elegimos el servidor que más se adecue a nuestro proyecto, finalizamos dándole click a botón `"Create app"`.
-          ![nombre app](/src/imagenes-readme/nombre-app.png)
-
-  * paso 3: ingresamos a `"Deploy"`.
-        ![deploy app](/src/imagenes-readme/deploy.png)
-
-  * paso 4: Seleccionamos el método con el que subiremos el proyecto, tenemos 2 opciones:  
-        ![deploy app](/src/imagenes-readme/metodo-deploy.png)    
-
-    - 4.1.- Heroku CLI: seguir los pasos que indica.
-      ![deploy app](/src/imagenes-readme/heroku-cli.png) 
-
-    - 4.2.- Repositorio GitHub: se sincroniza con tu repositorio, buscas el nombre de tu proyecto y le das conectar.
-      ![deploy app](/src/imagenes-readme/repositorio-git.png) 
-
-      - cuando encuentre tu repositorio verificas tu rama y finalizas dándole click en el botón `"Deploy Branch"`
-        ![deploy app](/src/imagenes-readme/finalizar.png) 
-
-  * paso 5: Para visualizar nuestro proyecto le damos click en `"View"`.
-      ![deploy app](/src/imagenes-readme/ver-IPN.png)  
-
-    - A la ruta que se muestra añadimos nuestra ruta endpoin `"/respuesta/IPN"`, debería quedar de la siguiente manera:
-
-      ```bash
-      https://izpay-prueba.herokuapp.com/respuesta/IPN
-      ```
-
-
+  * paso 1: Dirigirse a la pestaña de PORTS.
+  * paso 2: Iniciar sesión en GitHub en caso no ha iniciado sesión anteriormente.
+  * paso 3: Añadir el puerto de conexión que se desea sea accesible, en este caso el 5000.  
+  * paso 4: Cambiar la visibilidad a Públic, para permitir conexiones sin inicio de sesión. 
+  * paso 5: Añadir en el BackOffice Vendor el endpoint o ruta del ipn en la sección API REST.
 
 ## 5.- Configurar la URL de notificación al final del pago
 
