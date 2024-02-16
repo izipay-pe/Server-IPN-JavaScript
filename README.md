@@ -41,10 +41,6 @@ npm i express morgan
 ```bash
 npm run start
 ```
-<p align="center">
-  <img src="https://i.postimg.cc/Bb11T1J7/ejecutarproyecto.jpg" alt="Formulario" width="350"/>
-</p>
-
 
 ## 4. Subirlo al servidor web
 
