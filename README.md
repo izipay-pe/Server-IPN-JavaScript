@@ -13,7 +13,7 @@ En este manual podrás encontrar una guía paso a paso para configurar un proyec
 Este manual está diseñado para ayudarte a comprender el flujo de la integración de la pasarela para ayudarte a aprovechar al máximo tu proyecto y facilitar tu experiencia de desarrollo.
 
 <p align="center">
-  <img src="https://i.postimg.cc/ZK0X6Qys/repuestaipn.png" alt="Popin" width="550"/>
+  <img src="https://i.postimg.cc/ZK0X6Qys/repuestaipn.png" alt="Popin" width="850"/>
 </p>
 
 <a name="Requisitos_Previos"></a>
