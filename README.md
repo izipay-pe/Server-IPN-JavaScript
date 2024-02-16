@@ -57,7 +57,7 @@ Para este ejemplo se utilizó reenvío de puertos en Visual Studio Code, siga lo
   * paso 5: Añadir en el BackOffice Vendor el endpoint o ruta del ipn en la sección API REST.
 
     <p align="center">
-  <img src="https://i.postimg.cc/Kz8YJ4JP/PORTS.png" alt="Formulario" width="350"/>
+  <img src="https://i.postimg.cc/Kz8YJ4JP/PORTS.png" />
 </p>
 
 ## 5.- Configurar la URL de notificación al final del pago
