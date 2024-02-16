@@ -48,47 +48,44 @@ npm run start
 
 ## 4. Subirlo al servidor web
 
-* Para este ejemplo se utilizó el servidor gratuito de [Heroku](https://www.heroku.com/), ingrese a su cuenta de Heroku y siga los siguientes pasos.
+Para este ejemplo se utilizó reenvío de puertos en Visual Studio Code, siga los siguientes pasos.
 
-* Editar en `PaymentModel.cs` en la Carpeta Models:
+  * paso 1: creamos nuestro app, donde se subirá el proyecto.
+          ![crear app](/src/imagenes-readme/crear-app.png)
 
-```c#
-  {
-      private const string _usuario = "~~CHANGE_ME_USER~~";
-      private const string _contraseña = "~~CHANGE_ME_KEY~~";
-      private const string _clave_JS = "~~CHANGE_ME_PUBLIC_KEY~~";
-      private const string _clave_SHA256 = "~~CHANGE_ME_KEY_HMAC-SHA-256~~";
-      private const string _servidor_API = "https://api.micuentaweb.pe/";
-  }
-``` 
+  * paso 2: ingresamos un nombre para nuestro aplicativo y elegimos el servidor que más se adecue a nuestro proyecto, finalizamos dándole click a botón `"Create app"`.
+          ![nombre app](/src/imagenes-readme/nombre-app.png)
+
+  * paso 3: ingresamos a `"Deploy"`.
+        ![deploy app](/src/imagenes-readme/deploy.png)
+
+  * paso 4: Seleccionamos el método con el que subiremos el proyecto, tenemos 2 opciones:  
+        ![deploy app](/src/imagenes-readme/metodo-deploy.png)    
+
+    - 4.1.- Heroku CLI: seguir los pasos que indica.
+      ![deploy app](/src/imagenes-readme/heroku-cli.png) 
+
+    - 4.2.- Repositorio GitHub: se sincroniza con tu repositorio, buscas el nombre de tu proyecto y le das conectar.
+      ![deploy app](/src/imagenes-readme/repositorio-git.png) 
+
+      - cuando encuentre tu repositorio verificas tu rama y finalizas dándole click en el botón `"Deploy Branch"`
+        ![deploy app](/src/imagenes-readme/finalizar.png) 
+
+  * paso 5: Para visualizar nuestro proyecto le damos click en `"View"`.
+      ![deploy app](/src/imagenes-readme/ver-IPN.png)  
+
+    - A la ruta que se muestra añadimos nuestra ruta endpoin `"/respuesta/IPN"`, debería quedar de la siguiente manera:
+
+      ```bash
+      https://izpay-prueba.herokuapp.com/respuesta/IPN
+      ```
 
 
-## 5. Transacción de prueba
-Antes de poner en marcha su pasarela de pago en un entorno de producción, es esencial realizar pruebas para garantizar su correcto funcionamiento. 
 
-Puede intentar realizar una transacción utilizando una tarjeta de prueba con la barra de herramientas de depuración (en la parte inferior de la página).
+## 5.- Configurar la URL de notificación al final del pago
 
-<p align="center">
-  <img src="https://i.postimg.cc/3xXChGp2/tarjetas-prueba.png" alt="Formulario"/>
-</p>
+  * Ingresar a su back office vendedor [aquí](https://secure.micuentaweb.pe/vads-merchant/) e ingresar a la siguiente ruta: `Configuración -> Reglas de notificaciones -> Url de notificación al final del pago`, una ves ingrese su endpoint, Guarda y acepta el mensaje de confirmación.
 
-* También puede encontrar tarjetas de prueba en el siguiente enlace. [Tarjetas de prueba](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/kb/test_cards.html)
- 
-## 6. Implementación de la IPN
-> [!IMPORTANT]
-> Es recomendable implementar la IPN para comunicar el resultado de la solicitud de pago al servidor del comercio.
+      ![Regla de Notificación](/src/imagenes-readme/rconfigurar-endpoint.png)
+  
 
-La IPN es una notificación de servidor a servidor (servidor de Izipay hacia el servidor del comercio) que facilita información en tiempo real y de manera automática cuando se produce un evento, por ejemplo, al registrar una transacción.
-Los datos transmitidos en la IPN se reciben y analizan mediante un script que el vendedor habrá desarrollado en su servidor.
-* Ver manual de implementación de la IPN. [Aquí]( https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
-* Vea el ejemplo de la respuesta IPN con PHP. [Aquí](https://github.com/izipay-pe/Redirect-PaymentForm-IpnT1-PHP)
-* Vea el ejemplo de la respuesta IPN con NODE.JS. [Aquí](https://github.com/izipay-pe/Response-PaymentFormT1-Ipn)
-
-## 7. Personalización
-Si deseas aplicar cambios específicos en la apariencia de la pasarela de pago, puedes lograrlo mediante la modificación de código CSS. En este enlace [Código CSS - Incrustado](https://github.com/izipay-pe/Personalizacion-PaymentForm-Incrustado) podrá encontrar nuestro script para un formulario incrustado.
-
-## 8. Consideraciones
-Para obtener más información, echa un vistazo a:
-- [Formulario incrustado: prueba rápida](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/quick_start_js.html)
-- [Primeros pasos: pago simple](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/start.html)
-- [Servicios web - referencia de la API REST](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/api/reference.html)
