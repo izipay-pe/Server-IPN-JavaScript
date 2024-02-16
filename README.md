@@ -37,14 +37,18 @@ Este manual está diseñado para ayudarte a comprender el flujo de la integraci�
 ```bash
 npm i express morgan
  ```
+* Para poder probar si el servidor está operativo, ejecute el comando.
+```bash
+npm run start
+```
 <p align="center">
   <img src="https://i.postimg.cc/Bb11T1J7/ejecutarproyecto.jpg" alt="Formulario" width="350"/>
 </p>
 
 
-## 4. Datos de conexión 
+## 4. Subirlo al servidor web
 
-**Nota**: Reemplace **[CHANGE_ME]** con sus credenciales de `API REST` extraídas desde el Back Office Vendedor, ver [Requisitos Previos](#Requisitos_Previos).
+* Para este ejemplo se utilizó el servidor gratuito de [Heroku](https://www.heroku.com/), ingrese a su cuenta de Heroku y siga los siguientes pasos.
 
 * Editar en `PaymentModel.cs` en la Carpeta Models:
 
